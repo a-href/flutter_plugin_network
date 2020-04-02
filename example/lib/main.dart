@@ -44,13 +44,23 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
-        ),
-      ),
+          appBar: AppBar(
+            title: const Text('Plugin example app'),
+          ),
+          body: Column(
+            children: <Widget>[
+              FloatingActionButton(
+                onPressed: () async {
+                  /// 调用插件的 Toast 功能
+                  // await FlutterPluginDemo.showToast();
+                },
+                child: Icon(Icons.add),
+              ),
+              Center(
+                child: Text('Running on: $_platformVersion\n'),
+              ),
+            ],
+          )),
     );
   }
 }

@@ -10,4 +10,9 @@ class FlutterPluginNetwork {
     final String version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
+    /// 弹出 Toast
+  static Future<void> showToast() async {
+    await _channel.invokeMethod("showToast");
+  }
+
 }
