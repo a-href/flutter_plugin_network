@@ -2,7 +2,7 @@ name: flutter_plugin_network
 description: A new Flutter plugin.
 version: 0.0.1
 author: caolingjie
-homepage: https://github.com/caodoudou/flutter_plugin_network
+homepage: https://github.com/a-href/flutter_plugin_network
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
